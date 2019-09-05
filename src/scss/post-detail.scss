@@ -1,0 +1,67 @@
+.main_banner.post_banner{
+    background: url(../images/astro_img.jpg) no-repeat center; 
+    height: 700px;
+    background-size: cover; 
+    text-align: left; 
+    h1{
+        font-size: 3em; 
+        &:first-letter{
+            text-transform: uppercase; 
+        }
+        margin-bottom: 10px;
+    }
+    h4{
+        font-weight: 600; 
+        font-size: 2em; 
+        margin-bottom: 20px;
+    }
+    p{
+        font-size: 1.2em; 
+    }
+}
+.post_desc_sec{
+    p{
+        margin-bottom: 20px;
+        color: #4a4949;
+        line-height: 28px;
+        &:last-of-type{
+            margin-bottom: 0px;
+        }
+    }
+    h2{
+            font-weight: 700;
+            margin-bottom: 16px;
+            margin-top: 39px;
+            color: #333;
+            text-transform: capitalize; 
+    }
+    figure{
+        padding-top: 20px;
+        padding-bottom: 40px; 
+        margin-bottom: 0px;
+        img{
+            width: 100%; 
+        }
+        figcaption{
+            
+            text-align: center; 
+            margin-top: 10px; 
+            font-size: 14px;
+            color: $grey_text;
+            &::first-letter{
+                text-transform: uppercase; 
+                
+            }
+        }
+    }
+    .quotes{
+        border-left: 5px solid #cccccc59;
+        padding: 8px  20px;
+        margin-bottom: 20px;
+        p{
+            font-size: 15px; 
+            line-height: 25px; 
+            color: $grey_text; 
+        }
+    }
+}

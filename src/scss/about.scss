@@ -1,0 +1,6 @@
+.about_desc p{
+    color:#4a4949; 
+    & + p{
+        margin-top: 20px;    
+    }
+}

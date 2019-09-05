@@ -1,0 +1,67 @@
+.main_header{
+    position: fixed; 
+    width: 100%; 
+    padding: 0px 15px;
+    height: 60px; 
+    z-index: 9999;
+    transition: all 0.5s; 
+ 
+    .header_inner{
+        display: flex; 
+        .toggle_box{
+            display: none; 
+        }
+        .logo_side{
+            h2{
+                color:#fff;
+                font-size: 1.3em;
+                line-height: 56px;
+                font-weight: 700
+            }
+            width: 30%; 
+        }
+        .main_nav{
+            width: 70%; 
+            nav{
+                text-align: right; 
+                 ul li{
+                     display: inline-block; 
+                     margin-left: 30px;
+                     a{
+                         color:#fff;
+                         font-weight: 700; 
+                         font-size: 14px;
+                         transition: all 0.5s; 
+                         line-height: 60px; 
+                         text-transform: uppercase; 
+                         font-family: 'Open Sans', sans-serif;
+                         &:hover{
+                             opacity: 0.6; 
+                         }
+                     }
+                 }
+            }
+        }
+    }
+    &.d_sticky{
+        background: $grey_color; 
+        
+        .logo_side{
+            h2{
+                color:#000; 
+            }
+        }
+        .main_nav{
+            nav{
+                ul{
+                    li{
+                        a{
+                            color:#000; 
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
